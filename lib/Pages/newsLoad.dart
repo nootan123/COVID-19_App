@@ -15,7 +15,7 @@ class _NewsLoadState extends State<NewsLoad> {
   void setupData() async {
    
     WorldInfection instance = WorldInfection();
-    await instance.getData('https://nepalcorona.info/api/v1/news');
+    await instance.getData('https://corona.askbhunte.com/api/v1/news');
     map = instance.data;
     list = map.values.toList();
     

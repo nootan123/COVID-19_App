@@ -14,10 +14,10 @@ class _LoadingState extends State<Loading> {
   List data;
   //  Map data = {};
   void setupData() async {
-  //  WorldInfection instance = WorldInfection();
+    //  WorldInfection instance = WorldInfection();
 //   await instance.getData('https://data.nepalcorona.info/api/v1/world');
     WorldInfection instance = WorldInfection();
-    await instance.getData('https://nepalcorona.info/api/v1/data/world');
+    await instance.getData('https://corona.askbhunte.com/api/v1/data/world');
     data = instance.data;
     // String totalCase = data[1]["totalCases"].toString();
     // String totaldeath = data[1]["totalDeaths"].toString();
